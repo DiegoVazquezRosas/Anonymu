@@ -46,6 +46,37 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+  .header-promocional {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .texto-header,
+  .imagen-header {
+    width: 100%;
+    padding: 0;
+  }
+
+  .texto-header {
+    padding-right: 0;
+  }
+
+  .texto-header h1 {
+    font-size: 2rem;
+  }
+
+  .lema {
+    font-size: 22px;
+  }
+
+  .logo-chatbot {
+    width: 80%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  } 
 
 /* NAV */
 .nav-principal {
@@ -82,7 +113,21 @@
     border-bottom: 2px solid #00e6b8;
 }
 
+@media (max-width: 768px) {
+  .nav-principal ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 
+  .nav-principal li {
+    margin: 0.5rem 0;
+  }
+
+  .nav-principal a {
+    font-size: 22px;
+  }
+}
 /* DIV */
 .precios {
     background-image: url(Fondo.png);
@@ -153,7 +198,35 @@ button:hover {
     box-shadow: 0 6px 12px rgba(255,152,0,0.3);
 }
 
+@media (max-width: 600px) {
+  .precios {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+  }
 
+  .plan {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .plan h2 {
+    font-size: 1.5em;
+  }
+
+  .precio {
+    font-size: 1.3em;
+  }
+
+  .plan ul {
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
 
 /* FOOTER */
 footer {
@@ -241,4 +314,32 @@ footer {
   font-size: 0.9rem;
   color: #aaa;
   border-top: 1px solid #444;
+}
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .form-busqueda input {
+    width: 60%;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .form-busqueda button {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .social-icons a img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.3rem;
+    margin-top: 0.7rem;
+  }
 }

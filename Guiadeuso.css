@@ -45,8 +45,37 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 768px) {
+  .header-promocional {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
 
+  .texto-header,
+  .imagen-header {
+    width: 100%;
+    padding: 0;
+  }
 
+  .texto-header {
+    padding-right: 0;
+  }
+
+  .texto-header h1 {
+    font-size: 2rem;
+  }
+
+  .lema {
+    font-size: 22px;
+  }
+
+  .logo-chatbot {
+    width: 80%;
+    height: auto;
+    margin-top: 1rem;
+  }
+}
 /* NAV */
 .nav-principal {
     background-color: #001f3f; 
@@ -82,7 +111,21 @@
     border-bottom: 2px solid #00e6b8;
 }
 
+@media (max-width: 768px) {
+  .nav-principal ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 
+  .nav-principal li {
+    margin: 0.5rem 0;
+  }
+
+  .nav-principal a {
+    font-size: 22px;
+  }
+}
 
 /* DIV */
 .lista-pasos {
@@ -148,7 +191,32 @@
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
+@media (max-width: 768px) {
+  .seccion-paso {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 1.5rem;
+  }
 
+  .texto-paso,
+  .imagen-paso {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .texto-paso p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .texto-paso h2 {
+    font-size: 1.5rem;
+  }
+
+  .imagen-paso img {
+    max-width: 90%;
+  }
+}
 
 /* FOOTER*/
 
@@ -239,3 +307,31 @@ footer {
   border-top: 1px solid #444;
 }
 
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .form-busqueda input {
+    width: 60%;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .form-busqueda button {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .social-icons a img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.3rem;
+    margin-top: 0.7rem;
+  }
+}
